@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/call_app"
+        android:title="calling"
+        android:icon="@drawable/ic_call_black_24dp"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/notification_menu"
+        android:title="Notification"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/logout"
+        android:title="LOGOUT"/>
+
+</menu>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_person_black_24dp"
+            android:background="@drawable/rounded_gradient"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20sp"/>
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_details_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_gradient"
+                android:padding="10dp"/>
+
+            <TextView
+                android:id="@+id/user_details_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textSize="25dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                android:background="@drawable/rounded_gradient"/>
+            <TextView
+                android:id="@+id/user_detail_mobile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone No."
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_gradient"/>
+
+            <TextView
+                android:id="@+id/profile_change_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="Change Password"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_gradient">
+                <TextView
+                    android:id="@+id/wallet_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wallet Rs. "
+                    android:textSize="30dp"
+                    android:padding="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/user_details_wallet_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000"
+                    android:textSize="30dp"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:layout_toEndOf="@id/wallet_text"
+                    android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/withdrawl_amount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/white"
+                android:text="00"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:inputType="phone"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/withdrawl_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Withdrawl"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/red"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Once you Click Withdrawl Fund You Will be Redirect to WhatsApp for Withdrawl Confirmation"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/red"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Game History"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_gradient"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:id="@+id/game_type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Game Type"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"/>
+                <TextView
+                    android:id="@+id/status_type_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/wallet_history_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

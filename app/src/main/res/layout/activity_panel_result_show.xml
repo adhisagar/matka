@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.ResultShowActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+
+            android:id="@+id/panel_details_click_here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For detailed Result Click Here"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:layout_marginBottom="10dp"/>
+
+        <HorizontalScrollView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="80dp"
+                            android:orientation="vertical"
+                            android:layout_marginStart="2dp"
+                            android:background="@color/light_blue">
+
+                            <TextView
+                                android:layout_height="80dp"
+                                android:layout_width="50dp"
+                                android:text="Date"
+                                android:textSize="14sp"
+                                android:padding="10dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="80dp"
+                            android:orientation="vertical"
+                            android:layout_marginStart="2dp"
+                            android:background="@color/light_blue">
+
+                            <TextView
+                                android:layout_height="80dp"
+                                android:layout_width="50dp"
+                                android:text="Monday"
+                                android:textSize="14sp"
+                                android:padding="10dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="80dp"
+                            android:orientation="vertical"
+                            android:layout_marginStart="2dp"
+                            android:background="@color/light_blue">
+
+                            <TextView
+                                android:layout_height="80dp"
+                                android:layout_width="50dp"
+                                android:text="Tuesday"
+                                android:textSize="14sp"
+                                android:padding="10dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="80dp"
+                            android:orientation="vertical"
+                            android:layout_marginStart="2dp"
+                            android:background="@color/light_blue">
+
+                            <TextView
+                                android:layout_height="80dp"
+                                android:layout_width="50dp"
+                                android:text="Wednesday"
+                                android:scrollbars="horizontal"
+                                android:textSize="14sp"
+                                android:padding="10dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="80dp"
+                            android:orientation="vertical"
+                            android:layout_marginStart="2dp"
+                            android:background="@color/light_blue">
+
+                            <TextView
+                                android:layout_height="80dp"
+                                android:layout_width="50dp"
+                                android:text="Thursday"
+                                android:textSize="14sp"
+                                android:padding="10dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="80dp"
+                            android:orientation="vertical"
+                            android:layout_marginStart="2dp"
+                            android:background="@color/light_blue">
+
+                            <TextView
+                                android:layout_height="80dp"
+                                android:layout_width="50dp"
+                                android:text="Friday"
+                                android:textSize="14sp"
+                                android:padding="10dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="80dp"
+                            android:orientation="vertical"
+                            android:layout_marginStart="2dp"
+                            android:background="@color/light_blue">
+
+                            <TextView
+                                android:layout_height="80dp"
+                                android:layout_width="50dp"
+                                android:text="Saturday"
+                                android:textSize="14sp"
+                                android:padding="10dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="50dp"
+                            android:layout_height="80dp"
+                            android:orientation="vertical"
+                            android:layout_marginStart="2dp"
+                            android:background="@color/light_blue">
+
+                            <TextView
+                                android:layout_height="80dp"
+                                android:layout_width="50dp"
+                                android:text="Sunday"
+                                android:textSize="14sp"
+                                android:padding="10dp"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+
+                    </TableRow>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/panel_result_show_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+</ScrollView>

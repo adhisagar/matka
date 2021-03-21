@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AddFundFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD MONEY TO MATKA BALANCE"
+        android:textStyle="bold|italic"
+        android:textSize="22sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mnimum Deposit Rs.500"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/add_fund_rupee_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:background="@drawable/half_round"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/rupee" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/add_fund_amount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/add_fund_rupee_icon"
+            android:background="@drawable/et_style"
+            android:backgroundTint="@color/white"
+            android:hint="Enter Amount"
+            android:textAlignment="textStart"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/add_five_hundred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:background="@drawable/half_round"
+            android:drawableStart="@drawable/rupeesmall"
+            />
+        <Button
+            android:id="@+id/add_thousand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:textSize="20sp"
+            android:paddingStart="5dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/half_round"
+            android:drawableStart="@drawable/rupeesmall"
+            android:layout_toEndOf="@id/add_five_hundred"/>
+
+        <Button
+            android:id="@+id/add_fifteen_hundred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1500"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:paddingStart="5dp"
+            android:background="@drawable/half_round"
+            android:drawableStart="@drawable/rupeesmall"
+            android:layout_toEndOf="@id/add_thousand"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_fund_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add fund"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Once you Click Add Fund You Will be Redirect to WhatsApp for Fund Confirmation"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"/>
+
+</LinearLayout>

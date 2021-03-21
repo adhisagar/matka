@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.TriplePattiFragment"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/single_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/light_blue">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Triple Patti 10 KA 5000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/yellow">
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="?android:attr/listDivider" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/yellow">
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="?android:attr/listDivider" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Your Game"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Balance Point"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider" />
+            </LinearLayout>
+
+
+            <!--
+                        <Spinner
+                            android:id="@+id/single_Market_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textAlignment="center"
+                            android:entries="@array/select_category"
+                            android:layout_marginTop="10dp"
+                            android:spinnerMode="dropdown"
+                            android:background="@drawable/spinner_bg"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"/>
+                            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/half_round"
+                    android:backgroundTint="@color/colorPrimary"/>
+
+                <Spinner
+                    android:id="@+id/triple_patti_Market_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textAlignment="center"
+                    android:spinnerMode="dropdown"
+                    android:background="@drawable/spinner_bg"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/half_round"
+                    android:backgroundTint="@color/colorPrimary"/>
+
+                <TextView
+                    android:id="@+id/triple_patti_date_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1212"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/et_style"
+                    android:backgroundTint="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/triple_patti_data_recycler_view"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_corner"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/frag_tripple_patti_text_number_000"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:text="000"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:background="@drawable/half_round"
+                            android:backgroundTint="@color/colorPrimary"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/frag_tripple_patti_data_edittext_000"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_toEndOf="@id/frag_tripple_patti_text_number_000"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/et_style"
+                            android:backgroundTint="@color/white"
+                            android:inputType="phone"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_corner"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/frag_tripple_patti_text_number_111"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:text="111"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:background="@drawable/half_round"
+                            android:backgroundTint="@color/colorPrimary"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/frag_tripple_patti_data_edittext_111"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_toEndOf="@id/frag_tripple_patti_text_number_111"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/et_style"
+                            android:backgroundTint="@color/white"
+                            android:inputType="phone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_corner"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/frag_tripple_patti_text_number_222"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:text="222"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:background="@drawable/half_round"
+                            android:backgroundTint="@color/colorPrimary"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/frag_tripple_patti_data_edittext_222"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_toEndOf="@id/frag_tripple_patti_text_number_222"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/et_style"
+                            android:backgroundTint="@color/white"
+                            android:inputType="phone"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_corner"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/frag_tripple_patti_text_number_333"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:text="333"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:background="@drawable/half_round"
+                            android:backgroundTint="@color/colorPrimary"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/frag_tripple_patti_data_edittext_333"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_toEndOf="@id/frag_tripple_patti_text_number_333"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/et_style"
+                            android:backgroundTint="@color/white"
+                            android:inputType="phone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_corner"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/frag_tripple_patti_text_number_444"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:text="444"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:background="@drawable/half_round"
+                            android:backgroundTint="@color/colorPrimary"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/frag_tripple_patti_data_edittext_444"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_toEndOf="@id/frag_tripple_patti_text_number_444"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/et_style"
+                            android:backgroundTint="@color/white"
+                            android:inputType="phone"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_corner"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/frag_tripple_patti_text_number_555"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:text="555"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:background="@drawable/half_round"
+                            android:backgroundTint="@color/colorPrimary"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/frag_tripple_patti_data_edittext_555"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_toEndOf="@id/frag_tripple_patti_text_number_555"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/et_style"
+                            android:backgroundTint="@color/white"
+                            android:inputType="phone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_corner"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/frag_tripple_patti_text_number_666"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:text="666"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:background="@drawable/half_round"
+                            android:backgroundTint="@color/colorPrimary"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/frag_tripple_patti_data_edittext_666"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_toEndOf="@id/frag_tripple_patti_text_number_666"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/et_style"
+                            android:backgroundTint="@color/white"
+                            android:inputType="phone"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_corner"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/frag_tripple_patti_text_number_777"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:text="777"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:background="@drawable/half_round"
+                            android:backgroundTint="@color/colorPrimary"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/frag_tripple_patti_data_edittext_777"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_toEndOf="@id/frag_tripple_patti_text_number_777"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/et_style"
+                            android:backgroundTint="@color/white"
+                            android:inputType="phone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_corner"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/frag_tripple_patti_text_number_888"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:text="888"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:background="@drawable/half_round"
+                            android:backgroundTint="@color/colorPrimary"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/frag_tripple_patti_data_edittext_888"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_toEndOf="@id/frag_tripple_patti_text_number_888"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/et_style"
+                            android:backgroundTint="@color/white"
+                            android:inputType="phone"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_corner"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/frag_tripple_patti_text_number_999"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:text="999"
+                            android:textSize="25sp"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"
+                            android:background="@drawable/half_round"
+                            android:backgroundTint="@color/colorPrimary"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/frag_tripple_patti_data_edittext_999"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_toEndOf="@id/frag_tripple_patti_text_number_999"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/et_style"
+                            android:backgroundTint="@color/white"
+                            android:inputType="phone"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:id="@+id/triple_patti_total_point_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentStart="true"
+                    android:text="Total Point : "/>
+
+                <TextView
+                    android:id="@+id/triple_patti_total_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_toEndOf="@id/triple_patti_total_point_text"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/triple_patti_submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Game"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/colorAccent"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/single_linear">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/poker"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/yellow"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

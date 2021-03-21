@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_category">
+        <item>--Select Category--</item>
+        <item>Sridevi</item>
+        <item>Time Bazar</item>
+        <item>Madhur Day</item>
+        <item>Milan Day</item>
+        <item>Rajdhani Day</item>
+        <item>Supreme Day</item>
+        <item>Kalyan</item>
+        <item>Sridevi Night</item>
+        <item>Supreme Night</item>
+        <item>Milan Night</item>
+        <item>Kalyan Night</item>
+        <item>Rajdhani Night</item>
+        <item>Main Ratan</item>
+        <item>Madhur Night</item>
+
+    </string-array>
+
+    <string-array name="select_category_jodi">
+        <item>--Select Category--</item>
+        <item>Sridevi Jodi</item>
+        <item>Time Bazar Jodi</item>
+        <item>Madhur Day Jodi</item>
+        <item>Milan Day Jodi</item>
+        <item>Rajdhani Day Jodi</item>
+        <item>Supreme Day Jodi</item>
+        <item>Kalyan Jodi</item>
+        <item>Sridevi Night Jodi</item>
+        <item>Supreme Night Jodi</item>
+        <item>Milan Night Jodi</item>
+        <item>Kalyan Night Jodi</item>
+        <item>Rajdhani Night Jodi</item>
+        <item>Main Ratan Jodi</item>
+        <item>Madhur Night Jodi</item>
+
+    </string-array>
+
+
+
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/first_relative_design"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/half_sangam_rounded_border"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:id="@+id/openAnk"
+                android:layout_alignParentStart="true"
+                android:text="Open Digit"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:background="@drawable/half_round"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/first_open_digit_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:maxLength="3"
+                android:hint="000 - 999"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/et_style"
+                android:backgroundTint="@color/white"
+                android:inputType="number"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:id="@+id/close_digit_name"
+                android:layout_alignParentStart="true"
+                android:text="Close Digit"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:background="@drawable/half_round"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/first_close_digit_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:maxLength="3"
+                android:hint="000 - 999"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/et_style"
+                android:backgroundTint="@color/white"
+                android:inputType="number"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:id="@+id/amountt"
+                android:layout_alignParentStart="true"
+                android:text="Amount"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:background="@drawable/half_round"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/full_sangam_amount_val"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/et_style"
+                android:backgroundTint="@color/white"
+                android:hint="Amount"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dynamic_add_full_sangam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dynamic_minus_full_sangam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_minush"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_below="@id/dynamic_add_full_sangam"/>
+
+</RelativeLayout>

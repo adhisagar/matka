@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">MatkaMasthi</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">HOME</string>
+    <string name="menu_single">SINGLE</string>
+    <string name="menu_jodi">JODI</string>
+    <string name="menu_single_patti">SINGLE PATTI</string>
+    <string name="double_patti">DOUBLE PATTI</string>
+    <string name="triple_patti">TRIPLE PATTI</string>
+    <string name="menu_half_sangam">HALF SANGAM</string>
+    <string name="menu_full_sangam">FULL SANGAM</string>
+    <string name="menu_jodi_chart">JODI CHART</string>
+    <string name="menu_game_ratio">GAME RATIO</string>
+    <string name="menu_game_history">GAME HISTORY</string>
+    <string name="menu_panel_chart">PANEL CHART</string>
+    <string name="menu_how_to_play">HOW TO PLAY</string>
+    <string name="menu_refer">REFER &amp; EARN</string>
+    <string name="add_fund">ADD FUND</string>
+    <string name="menu_profile">PROFILE</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="online_play">ONLINE MATKA PLAY - NOTICE BOARD</string>
+    <string name="online_play_details">Play online Matka is that the most well-liked mobile app to play online Satta Matka &amp; win your luck. Play online Matka game with all the Satta Matka game. Predict and get a huge quantity of rewards from us. We tend to guarantee you</string>
+
+    <string name="game_result">SATTA MATKA GAME RESULTS</string>
+    <string name="jodi_chart">ALL MATKA JODI CHART RECORDS</string>
+    <string name="panel_chart">ALL MATKA PANEL CHART RECORDS</string>
+    <string name="phone_number">9123456780</string>
+    <string name="contact_text">TO PLAY MATKA ONLINE CONTACT US</string>
+    <string name="poker">POKER</string>
+    <string name="privacy_policy">Copyright 2020 All rights reseved. Privacy Policy Terms &amp; Conditions</string>
+
+    <string name="play_online">ONLINE GAME KHELNE KE LIYE SABSE PEHLE AAP HUME PAISE DEPOSIT KARWAYE, MINIMUM AMOUNT 500 USSE KAM DEPOSIT NAHI LIYA JATA, USKE BAAD AAP JITNE PAISE HUME DEPOSIT KARWAYENGE UTNE POINT AAPKI USER ID ME ADD KAR DIYE JAAYENGE.</string>
+
+    <string name="point">1 Rs.==1 POINT</string>
+    <string name="play_text">JO GAME AAP KHELENGE AGAR AAP KA GAME LAGTA HAI TO AAPKE POINTS AUTOMATICALLY BADH JAAYENGE, AND JAB AAPKO PAYMENT CHAHIYE HO TAB AAP HUME CALL YA MESSEGE KARKE INFORM KARE, JISSE KI HUM AAPKE A/C ME PAYMENT TRANFER KAR SAKE.</string>
+    <string name="play_text_second">BET KARNE KA MINIMUM AMOUNT 10 Rs.USSE KAM SE GAME NA KHELE. KISI HELP AND A/C ME PAISE DEPOSIT KARWANE KE LIYE AAP HUM NEECHE DIYE GAYE NUMBERS PAR CONTACT KARE…..</string>
+    <string name="rules_play">RULES- HOW TO PLAY MATKA ONLINE</string>
+    <string name="rules_text">\u2022 First of all Kindly Deposit money to our a/c.
+    \n\u2022 Minimum deposit of Rs 500 Rs., below 500 Rs. will not be accepted .
+    \n\u2022 Secondly the amount of money you deposit accordingly the points will be added to your corresponding ID</string>
+
+    <string name="rules_text_second">\u2022 The game you played and got lucky enough to win it then accordingly your points will be increased.
+\n\u2022 If you wish to encash the points of your ID then kindly call or message us and your money will be transferred to your account as soon as</string>
+
+    <string name="rules_text_third">**In case of any inconvenience regarding the transaction of money OR further query then you can contact us on the following numbers.</string>
+    <string name="matka_group">MATKA PLAY GROUP</string>
+    <string name="min_to_bet">Minimum amount to bet is Rs. 10.</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

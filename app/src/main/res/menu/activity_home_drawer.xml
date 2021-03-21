@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home"
+            android:icon="@drawable/ic_baseline_home_24" />
+        <item
+            android:id="@+id/nav_single"
+            android:title="@string/menu_single"
+            android:icon="@drawable/ic_baseline_person_24"/>
+        <item
+            android:id="@+id/nav_jodi"
+            android:title="@string/menu_jodi"
+            android:icon="@drawable/ic_baseline_people_24"/>
+
+        <item
+            android:id="@+id/nav_single_patti"
+            android:title="@string/menu_single_patti"
+            android:icon="@drawable/card4"/>
+        <item
+            android:id="@+id/nav_double_patti"
+            android:title="@string/double_patti"
+            android:icon="@drawable/cards"/>
+        <item
+            android:id="@+id/nav_triple_patti"
+            android:title="@string/triple_patti"
+            android:icon="@drawable/cards"/>
+        <item
+            android:id="@+id/nav_half_sangam"
+            android:title="@string/menu_half_sangam"
+            android:icon="@drawable/card2"/>
+        <item
+            android:id="@+id/nav_full_sangam"
+            android:title="@string/menu_full_sangam"
+            android:icon="@drawable/card5"/>
+
+        <item
+            android:id="@+id/nav_game_ratio"
+            android:title="@string/menu_game_ratio"
+            android:icon="@drawable/ratio"/>
+
+        <item
+            android:id="@+id/nav_game_history"
+            android:title="@string/menu_game_history"
+            android:icon="@drawable/ic_baseline_history_24"/>
+
+        <item
+            android:id="@+id/nav_jodi_chart"
+            android:title="@string/menu_jodi_chart"
+            android:icon="@drawable/area"/>
+        <item
+            android:id="@+id/nav_panel_chart"
+            android:title="@string/menu_panel_chart"
+            android:icon="@drawable/chart"/>
+        <item
+            android:id="@+id/nav_how_to_play"
+            android:title="@string/menu_how_to_play"
+            android:icon="@drawable/play"/>
+        <!--
+        <item
+            android:id="@+id/nav_refer"
+            android:title="@string/menu_refer" />
+            -->
+        <item
+            android:id="@+id/nav_add_fund"
+            android:title="@string/add_fund"
+            android:icon="@drawable/ic_baseline_account_balance_wallet_24"/>
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="PROFILE"
+            android:icon="@drawable/ic_baseline_perm_contact_calendar_24"/>
+
+    </group>
+</menu>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+    android:stretchColumns="0,1,2,3,4,5,6"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp">
+
+    <TableRow android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/monday_result_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Monday"
+            android:textAlignment="center"
+            android:layout_marginStart="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_column="0"/>
+
+
+        <TextView
+            android:id="@+id/tuesday_result_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Tuesday"
+            android:textAlignment="center"
+            android:layout_marginStart="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_column="1"/>
+
+
+        <TextView
+            android:id="@+id/wednesday_result_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Wednesay"
+            android:textAlignment="center"
+            android:layout_marginStart="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_column="2"/>
+
+
+        <TextView
+            android:id="@+id/thursday_result_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Thursday"
+            android:textAlignment="center"
+            android:layout_marginStart="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_column="3"/>
+        <TextView
+            android:id="@+id/friday_result_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Friday"
+            android:textAlignment="center"
+            android:layout_marginStart="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_column="4"/>
+        <TextView
+            android:id="@+id/saturday_result_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Saturday"
+            android:textAlignment="center"
+            android:layout_marginStart="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_column="5"/>
+        <TextView
+            android:id="@+id/sunday_result_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Sunday"
+            android:textAlignment="center"
+            android:layout_marginStart="2dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_column="6"/>
+    </TableRow>
+
+    </TableLayout>
+

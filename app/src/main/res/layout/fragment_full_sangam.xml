@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HalfSangamFragment"
+    android:background="@color/backGoundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FULL SANGAM (10 KA 100000)"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/yellow">
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/yellow">
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Your Game"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balance Point"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?android:attr/listDivider" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/half_round"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <Spinner
+                android:id="@+id/half_sangam_Market_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/spinner_bg"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/half_round"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/full_sangam_date_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1212"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:background="@drawable/et_style"
+                android:backgroundTint="@color/white"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dynamic_first_layout_full_sangam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+        </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+                <Button
+                    android:id="@+id/full_sanagam_total_point_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_alignParentStart="true"
+                    android:text="Total Point : "/>
+
+                <TextView
+                    android:id="@+id/full_sangam_total_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:text="00"
+                    android:layout_toEndOf="@id/full_sanagam_total_point_text"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/full_sangam_submit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Game"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/colorAccent"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="?android:attr/listDivider" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/single_linear">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/poker"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/yellow"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_policy"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+    <!--
+
+    <RelativeLayout
+                    android:id="@+id/second_relative_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/half_sangam_rounded_border"
+                        android:padding="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="10dp"
+
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/closeAnk"
+                                android:layout_alignParentStart="true"
+                                android:text="Close Ank"
+                                android:textSize="25sp"
+                                android:textColor="@color/black"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:background="@drawable/half_round"
+                                android:backgroundTint="@color/colorPrimary"/>
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:textSize="25sp"
+                                android:textAlignment="center"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/et_style"
+                                android:backgroundTint="@color/white"
+                                android:inputType="number"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/openPattii"
+                                android:layout_alignParentStart="true"
+                                android:text="Open Patti"
+                                android:textSize="25sp"
+                                android:textColor="@color/black"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:background="@drawable/half_round"
+                                android:backgroundTint="@color/colorPrimary"/>
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:textSize="25sp"
+                                android:textAlignment="center"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/et_style"
+                                android:backgroundTint="@color/white"
+                                android:inputType="number"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginBottom="10dp"
+
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:layout_width="200dp"
+                                android:layout_height="40dp"
+                                android:id="@+id/second_amount"
+                                android:layout_alignParentStart="true"
+                                android:text="Amount"
+                                android:textSize="25sp"
+                                android:textColor="@color/black"
+                                android:textAlignment="center"
+                                android:layout_gravity="center"
+                                android:background="@drawable/half_round"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:layout_marginBottom="10dp"/>
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/second_amount_val"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:padding="20dp"
+                                android:paddingBottom="20dp"
+                                android:textSize="25sp"
+                                android:textAlignment="center"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:background="@drawable/et_style"
+                                android:backgroundTint="@color/white"
+                                android:inputType="number"
+                                android:layout_marginBottom="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_add"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"/>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_minush"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+    -->
