@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.SingleFragment"
+    android:background="@color/grey"
     android:orientation="vertical"
-    android:background="@color/grey">
+    tools:context=".fragment.SingleFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -16,26 +16,27 @@
             android:id="@+id/single_linear"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@color/light_blue">
+            android:background="@color/light_blue"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SINGLE 10 KA 100"
-                android:textSize="22sp"
-                android:textStyle="bold"
                 android:layout_marginTop="10dp"
+                android:text="SINGLE 10 KA 100"
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textAlignment="center"/>
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="60dp"
-                android:layout_marginEnd="60dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
                 android:background="@color/yellow">
+
                 <View
                     android:id="@+id/divider3"
                     android:layout_width="match_parent"
@@ -47,9 +48,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
-                android:layout_marginEnd="40dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
                 android:background="@color/yellow">
+
                 <View
                     android:id="@+id/divider2"
                     android:layout_width="match_parent"
@@ -61,26 +63,27 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="Select Your Game"
-                android:textSize="20sp"
-                android:textColor="@color/black"
                 android:textAlignment="center"
-                android:layout_marginTop="20dp"/>
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Balance Point"
                 android:layout_marginTop="8dp"
-                android:textStyle="bold"
+                android:text="Balance Point"
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textAlignment="center"/>
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@color/white">
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
@@ -88,25 +91,25 @@
             </LinearLayout>
 
 
-<!--
-            <Spinner
-                android:id="@+id/single_Market_spinner"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:textAlignment="center"
-                android:entries="@array/select_category"
-                android:layout_marginTop="10dp"
-                android:spinnerMode="dropdown"
-                android:background="@drawable/spinner_bg"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"/>
-                -->
+            <!--
+                        <Spinner
+                            android:id="@+id/single_Market_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:textAlignment="center"
+                            android:entries="@array/select_category"
+                            android:layout_marginTop="10dp"
+                            android:spinnerMode="dropdown"
+                            android:background="@drawable/spinner_bg"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"/>
+                            -->
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 android:orientation="horizontal">
 
@@ -114,15 +117,15 @@
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/half_round"
-                    android:backgroundTint="@color/colorPrimary"/>
+                    android:backgroundTint="@color/colorPrimary" />
 
                 <Spinner
                     android:id="@+id/single_Market_spinner"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:textAlignment="center"
+                    android:background="@drawable/spinner_bg"
                     android:spinnerMode="dropdown"
-                    android:background="@drawable/spinner_bg"/>
+                    android:textAlignment="center" />
                 <!--
                                     android:entries="@array/select_category"-->
             </LinearLayout>
@@ -144,8 +147,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
                 android:orientation="horizontal">
 
@@ -153,78 +156,79 @@
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/half_round"
-                    android:backgroundTint="@color/colorPrimary"/>
+                    android:backgroundTint="@color/colorPrimary" />
 
                 <TextView
                     android:id="@+id/single_date_spinner"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="1212"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
                     android:background="@drawable/et_style"
                     android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:text="1212"
                     android:textAlignment="center"
-                    android:gravity="center"/>
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/single_data_recycler_view"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:visibility="gone"
-                android:nestedScrollingEnabled="false"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="1"
                     android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginTop="10dp">
+                    android:orientation="horizontal"
+                    android:weightSum="1">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/rounded_corner"
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_corner">
 
                         <TextView
                             android:id="@+id/frag_single_text_number_0"
                             android:layout_width="80dp"
                             android:layout_height="40dp"
                             android:layout_alignParentStart="true"
-                            android:text="0"
-                            android:textSize="25sp"
-                            android:textColor="@color/white"
-                            android:textAlignment="center"
                             android:background="@drawable/half_round"
-                            android:backgroundTint="@color/colorPrimary"/>
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
 
                         <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/frag_single_data_edittext_0"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:layout_toEndOf="@id/frag_single_text_number_0"
-                            android:textSize="25sp"
-                            android:textAlignment="center"
-                            android:layout_alignParentEnd="true"
                             android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@id/frag_single_text_number_0"
                             android:background="@drawable/et_style"
                             android:backgroundTint="@color/white"
-                            android:inputType="phone"/>
+                            android:inputType="phone"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
 
                     </RelativeLayout>
 
@@ -233,33 +237,33 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/rounded_corner"
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_corner">
 
                         <TextView
                             android:id="@+id/frag_single_text_number_1"
                             android:layout_width="80dp"
                             android:layout_height="40dp"
                             android:layout_alignParentStart="true"
-                            android:text="1"
-                            android:textSize="25sp"
-                            android:textColor="@color/white"
-                            android:textAlignment="center"
                             android:background="@drawable/half_round"
-                            android:backgroundTint="@color/colorPrimary"/>
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="1"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
 
                         <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/frag_single_data_edittext_1"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:layout_toEndOf="@id/frag_single_text_number_1"
-                            android:textSize="25sp"
-                            android:textAlignment="center"
-                            android:layout_alignParentEnd="true"
                             android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@id/frag_single_text_number_1"
                             android:background="@drawable/et_style"
                             android:backgroundTint="@color/white"
-                            android:inputType="phone"/>
+                            android:inputType="phone"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
 
                     </RelativeLayout>
 
@@ -268,44 +272,44 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="1"
                     android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginTop="10dp">
+                    android:orientation="horizontal"
+                    android:weightSum="1">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/rounded_corner"
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_corner">
 
                         <TextView
                             android:id="@+id/frag_single_text_number_2"
                             android:layout_width="80dp"
                             android:layout_height="40dp"
                             android:layout_alignParentStart="true"
-                            android:text="2"
-                            android:textSize="25sp"
-                            android:textColor="@color/white"
-                            android:textAlignment="center"
                             android:background="@drawable/half_round"
-                            android:backgroundTint="@color/colorPrimary"/>
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
 
                         <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/frag_single_data_edittext_2"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:layout_toEndOf="@id/frag_single_text_number_2"
-                            android:textSize="25sp"
-                            android:textAlignment="center"
-                            android:layout_alignParentEnd="true"
                             android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@id/frag_single_text_number_2"
                             android:background="@drawable/et_style"
                             android:backgroundTint="@color/white"
-                            android:inputType="phone"/>
+                            android:inputType="phone"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
 
                     </RelativeLayout>
 
@@ -314,33 +318,33 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/rounded_corner"
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_corner">
 
                         <TextView
                             android:id="@+id/frag_single_text_number_3"
                             android:layout_width="80dp"
                             android:layout_height="40dp"
                             android:layout_alignParentStart="true"
-                            android:text="3"
-                            android:textSize="25sp"
-                            android:textColor="@color/white"
-                            android:textAlignment="center"
                             android:background="@drawable/half_round"
-                            android:backgroundTint="@color/colorPrimary"/>
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="3"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
 
                         <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/frag_single_data_edittext_3"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:layout_toEndOf="@id/frag_single_text_number_3"
-                            android:textSize="25sp"
-                            android:textAlignment="center"
-                            android:layout_alignParentEnd="true"
                             android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@id/frag_single_text_number_3"
                             android:background="@drawable/et_style"
                             android:backgroundTint="@color/white"
-                            android:inputType="phone"/>
+                            android:inputType="phone"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
 
                     </RelativeLayout>
 
@@ -349,44 +353,44 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="1"
                     android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginTop="10dp">
+                    android:orientation="horizontal"
+                    android:weightSum="1">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/rounded_corner"
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_corner">
 
                         <TextView
                             android:id="@+id/frag_single_text_number_4"
                             android:layout_width="80dp"
                             android:layout_height="40dp"
                             android:layout_alignParentStart="true"
-                            android:text="4"
-                            android:textSize="25sp"
-                            android:textColor="@color/white"
-                            android:textAlignment="center"
                             android:background="@drawable/half_round"
-                            android:backgroundTint="@color/colorPrimary"/>
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="4"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
 
                         <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/frag_single_data_edittext_4"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:layout_toEndOf="@id/frag_single_text_number_4"
-                            android:textSize="25sp"
-                            android:textAlignment="center"
-                            android:layout_alignParentEnd="true"
                             android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@id/frag_single_text_number_4"
                             android:background="@drawable/et_style"
                             android:backgroundTint="@color/white"
-                            android:inputType="phone"/>
+                            android:inputType="phone"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
 
                     </RelativeLayout>
 
@@ -395,33 +399,33 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/rounded_corner"
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_corner">
 
                         <TextView
                             android:id="@+id/frag_single_text_number_5"
                             android:layout_width="80dp"
                             android:layout_height="40dp"
                             android:layout_alignParentStart="true"
-                            android:text="5"
-                            android:textSize="25sp"
-                            android:textColor="@color/white"
-                            android:textAlignment="center"
                             android:background="@drawable/half_round"
-                            android:backgroundTint="@color/colorPrimary"/>
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="5"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
 
                         <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/frag_single_data_edittext_5"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:layout_toEndOf="@id/frag_single_text_number_5"
-                            android:textSize="25sp"
-                            android:textAlignment="center"
-                            android:layout_alignParentEnd="true"
                             android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@id/frag_single_text_number_5"
                             android:background="@drawable/et_style"
                             android:backgroundTint="@color/white"
-                            android:inputType="phone"/>
+                            android:inputType="phone"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
 
                     </RelativeLayout>
 
@@ -430,44 +434,44 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="1"
                     android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginTop="10dp">
+                    android:orientation="horizontal"
+                    android:weightSum="1">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/rounded_corner"
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_corner">
 
                         <TextView
                             android:id="@+id/frag_single_text_number_6"
                             android:layout_width="80dp"
                             android:layout_height="40dp"
                             android:layout_alignParentStart="true"
-                            android:text="6"
-                            android:textSize="25sp"
-                            android:textColor="@color/white"
-                            android:textAlignment="center"
                             android:background="@drawable/half_round"
-                            android:backgroundTint="@color/colorPrimary"/>
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="6"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
 
                         <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/frag_single_data_edittext_6"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:layout_toEndOf="@id/frag_single_text_number_6"
-                            android:textSize="25sp"
-                            android:textAlignment="center"
-                            android:layout_alignParentEnd="true"
                             android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@id/frag_single_text_number_6"
                             android:background="@drawable/et_style"
                             android:backgroundTint="@color/white"
-                            android:inputType="phone"/>
+                            android:inputType="phone"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
 
                     </RelativeLayout>
 
@@ -476,33 +480,33 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/rounded_corner"
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_corner">
 
                         <TextView
                             android:id="@+id/frag_single_text_number_7"
                             android:layout_width="80dp"
                             android:layout_height="40dp"
                             android:layout_alignParentStart="true"
-                            android:text="7"
-                            android:textSize="25sp"
-                            android:textColor="@color/white"
-                            android:textAlignment="center"
                             android:background="@drawable/half_round"
-                            android:backgroundTint="@color/colorPrimary"/>
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="7"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
 
                         <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/frag_single_data_edittext_7"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:layout_toEndOf="@id/frag_single_text_number_7"
-                            android:textSize="25sp"
-                            android:textAlignment="center"
-                            android:layout_alignParentEnd="true"
                             android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@id/frag_single_text_number_7"
                             android:background="@drawable/et_style"
                             android:backgroundTint="@color/white"
-                            android:inputType="phone"/>
+                            android:inputType="phone"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
 
                     </RelativeLayout>
 
@@ -511,44 +515,44 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="1"
                     android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginTop="10dp">
+                    android:orientation="horizontal"
+                    android:weightSum="1">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/rounded_corner"
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_corner">
 
                         <TextView
                             android:id="@+id/frag_single_text_number_8"
                             android:layout_width="80dp"
                             android:layout_height="40dp"
                             android:layout_alignParentStart="true"
-                            android:text="8"
-                            android:textSize="25sp"
-                            android:textColor="@color/white"
-                            android:textAlignment="center"
                             android:background="@drawable/half_round"
-                            android:backgroundTint="@color/colorPrimary"/>
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="8"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
 
                         <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/frag_single_data_edittext_8"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:layout_toEndOf="@id/frag_single_text_number_8"
-                            android:textSize="25sp"
-                            android:textAlignment="center"
-                            android:layout_alignParentEnd="true"
                             android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@id/frag_single_text_number_8"
                             android:background="@drawable/et_style"
                             android:backgroundTint="@color/white"
-                            android:inputType="phone"/>
+                            android:inputType="phone"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
 
                     </RelativeLayout>
 
@@ -557,36 +561,35 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginBottom="10dp"
-                        android:background="@drawable/rounded_corner"
-                        android:layout_weight="0.5">
+                        android:layout_weight="0.5"
+                        android:background="@drawable/rounded_corner">
 
                         <TextView
                             android:id="@+id/frag_single_text_number_9"
                             android:layout_width="80dp"
                             android:layout_height="40dp"
                             android:layout_alignParentStart="true"
-                            android:text="9"
-                            android:textSize="25sp"
-                            android:textColor="@color/white"
-                            android:textAlignment="center"
                             android:background="@drawable/half_round"
-                            android:backgroundTint="@color/colorPrimary"/>
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="9"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
 
                         <androidx.appcompat.widget.AppCompatEditText
                             android:id="@+id/frag_single_data_edittext_9"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
-                            android:layout_toEndOf="@id/frag_single_text_number_9"
-                            android:textSize="25sp"
-                            android:textAlignment="center"
-                            android:layout_alignParentEnd="true"
                             android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@id/frag_single_text_number_9"
                             android:background="@drawable/et_style"
                             android:backgroundTint="@color/white"
-                            android:inputType="phone"/>
+                            android:inputType="phone"
+                            android:textAlignment="center"
+                            android:textSize="25sp" />
 
                     </RelativeLayout>
-
 
 
                 </LinearLayout>
@@ -598,7 +601,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="center"
-                android:visibility="gone"/>
+                android:visibility="gone" />
 
             <RelativeLayout
                 android:layout_width="wrap_content"
@@ -612,39 +615,41 @@
                     android:id="@+id/single_total_point_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
+                    android:layout_alignParentStart="true"
                     android:shadowColor="#cf1d1d"
                     android:shadowDx="0.0"
                     android:shadowDy="0.0"
                     android:shadowRadius="8"
-                    android:layout_alignParentStart="true"
-                    android:text="Calculate Total : "/>
+                    android:text="Calculate Total : "
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/single_total_point"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/single_total_point_text"
                     android:text="00"
-                    android:layout_toEndOf="@id/single_total_point_text"/>
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
             </RelativeLayout>
 
             <Button
                 android:id="@+id/single_submit_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Submit Game"
-                android:textColor="@color/white"
-                android:textAllCaps="false"
                 android:layout_gravity="center"
-                android:padding="10dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/rounded_corner"
-                android:backgroundTint="@color/colorAccent"/>
+                android:backgroundTint="@color/colorAccent"
+                android:padding="10dp"
+                android:text="Submit Game"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -652,6 +657,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="20dp"
                 android:background="@color/white">
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
@@ -660,44 +666,41 @@
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/single_linear"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
             android:background="@color/colorPrimary"
-            android:orientation="vertical"
-            android:layout_gravity="bottom"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@id/single_linear">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/poker"
                 android:textAlignment="center"
+                android:textColor="@color/yellow"
                 android:textSize="25sp"
-                android:textStyle="bold"
-                android:textColor="@color/yellow"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/privacy_policy"
-                android:textColor="@color/white"
-                android:textAlignment="center"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="20dp"
+                android:text="@string/privacy_policy"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
     </RelativeLayout>
-
-
-
-
 
 
 </androidx.core.widget.NestedScrollView>
